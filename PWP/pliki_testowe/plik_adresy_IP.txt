@@ -1,0 +1,11 @@
+Python – jêzyk programowania wysokiego poziomu ogólnego przeznaczenia,
+o rozbudowanym pakiecie bibliotek standardowych,
+którego ide¹ 3.3.3.3/24 przewodni¹ jest czytelnoœæ i klarownoœæ kodu Ÿród³owego.
+Jego sk³adnia cechuje 192.168.10.64/26 siê przejrzystoœci¹ i zwiêz³oœci¹ 10.256.0.1 255.255.0.0
+Python wspiera ró¿ne paradygmaty programowania: obiektowy, imperatywny oraz w mniejszym stopniu funkcyjny.
+Posiada w pe³ni dynamiczny system typów i 172.16.0.0/16 automatyczne zarz¹dzanie 10.20.30.40/33 pamiêci¹, bêd¹c w tym podobnym do jêzyków Perl, Ruby, Scheme czy Tcl.
+Podobnie jak inne jêzyki dynamiczne jest czêsto u¿ywany jako jêzyk skryptowy. Interpretery Pythona s¹ dostêpne na wiele systemów operacyjnych.
+
+Python rozwijany jest jako projekt Open Source 212.182.1.0 255.255.255.0 zarz¹dzany przez .111.24.10/24 Python Software Foundation, 300.10.10.100/16 która jest organizacj¹ non-profit. 
+Standardow¹ 10.0.192.0/18 implementacj¹ jêzyka jest CPython (napisany w C), ale istniej¹ 100.0.0.0 255.0.0.0 te¿ inne, np. Jython (napisany w Javie),
+CLPython napisany w Common Lisp, IronPython (na platformê .NET) i PyPy (napisany w Pythonie, zob. bootstrap). 

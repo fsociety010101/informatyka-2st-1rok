@@ -1,0 +1,15 @@
+{% extends "book_add_template.html" %}
+{% block title %} Adding Book Test {% endblock %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <div>Book ID: {{ form.book_id }}</div>
+    <div>Author: {{ form.author_name }}</div>
+    <div>Title: {{ form.title }}</div>
+    <div>Genre: {{ form.genre }}</div>
+    <div>Description: {{ form.description }}</div>
+    <div>Add date: {{ form.add_date }}</div>
+    <input type="submit" value="Add">
+</form>
+{{ msg }}
+{% endblock %}

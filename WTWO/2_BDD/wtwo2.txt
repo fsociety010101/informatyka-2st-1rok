@@ -1,0 +1,21 @@
+[Wymaganie nr 21]
+Feature: System musi odpowiadać warunkom technicznym oraz pozwalać na adaptację warunków organizacyjnych
+
+        Given:
+        When:
+        Then:
+
+[Wymaganie nr 22]
+Feature: System musi monitorować wszystkie zdarzenia związane z jego eksploatacją
+
+        Given:  Istniejący i działąjący system.
+        When:   Wprowadzanie lub modyfikowanie danych.
+        Then:   Dane lub zdarzenia są umieszczone i przechowywują się w systemie.
+
+[Wymaganie nr 23]
+Feature: System musi zapewniać zgodność gromadzonych danych
+
+        Given:  Istniejący i działąjący system.
+        and:    Możliwość wprowadzenia/gromadzenia danych w systemie
+        When:   Wprowadzanie lub modyfikowanie danych.
+        Then:   Wprowadzone dane przechowywują się w poprawnym formacie / ...

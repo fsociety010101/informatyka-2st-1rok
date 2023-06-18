@@ -1,0 +1,13 @@
+Opis: zadanie-6_zestaw-2
+stany: 0,1,k
+alfabet: 1,_
+długość słowa: 5
+słowo: 11111
+stan końcowy: k
+stan początkowy: 0
+instrukcja:
+0:
+    1;0,1,r;
+    _;1,_,l;
+1:
+    1;k,_,s;

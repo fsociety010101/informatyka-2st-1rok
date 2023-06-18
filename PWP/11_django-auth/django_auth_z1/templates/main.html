@@ -1,0 +1,19 @@
+{% extends 'tmpl.html' %}
+{% block title %} Main Page {% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+Hi {{ user.username }}!
+<p>Go to <a href="app1/page1">Private Page 1</a></p>
+<p>Go to <a href="app1/page2">Private Page 2</a></p>
+<p>
+    <a href="{% url 'logout' %}">logout</a>
+</p>
+{% else %}
+<p>You are not logged in
+    <a href="{% url 'login' %}">login</a>
+</p>
+Shortcuts
+<p>Go to <a href="app1/page1">Private Page 1</a></p>
+<p>Go to <a href="app1/page2">Private Page 2</a></p>
+{% endif %}
+{% endblock %}

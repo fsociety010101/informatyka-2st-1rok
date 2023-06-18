@@ -1,0 +1,4 @@
+Nazwa instrukcji: negacja
+Slowo przed modyfikacja: [_, 0, 1, 1, 0, 0, 1, _]
+Slowo po modyfikacji:    [_, 1, 1, 1, 1, 1, 1, _]
+Stan koncowy: k

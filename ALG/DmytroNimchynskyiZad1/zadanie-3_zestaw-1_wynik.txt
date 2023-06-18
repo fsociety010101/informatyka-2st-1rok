@@ -1,0 +1,4 @@
+Nazwa instrukcji: zadanie-3_zestaw-1
+Slowo przed modyfikacja: [_, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, _]
+Slowo po modyfikacji:    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, _]
+Stan koncowy: k

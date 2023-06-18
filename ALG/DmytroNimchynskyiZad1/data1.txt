@@ -1,0 +1,16 @@
+Opis: zadanie-3_zestaw-1
+stany: 0,1,k
+alfabet: 0,1,_
+długość słowa: 13
+słowo: 0110011010100
+stan końcowy: k
+stan początkowy: 0
+instrukcja:
+0:
+    0;0,1,r;
+    1;0,1,r;
+    _;1,_,l;
+1:
+    0;k,1,s;
+    1;1,0,l;
+    _;k,1,s;

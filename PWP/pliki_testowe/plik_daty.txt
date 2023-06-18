@@ -1,0 +1,19 @@
+Czy wiesz, jak poprawnie zapisywać daty?
+
+W języku polskim daty możemy zapisać na kilka sposobów. Najpopularniejsze z nich przedstawiamy poniżej.
+
+Zapis dat przy użyciu cyfr arabskich
+
+To chyba najczęstszy sposób zapisu. W polszczyźnie przyjęło się kolejność dzień – miesiąc – rok, a więc np. 20.03.2004, 3.05.1991. Z kolei w tradycji amerykańskiej kolejność jest inna: miesiąc – dzień – rok. Warto o tym pamiętać, bo w przypadku niektórych dat łatwo o pomyłkę w poprawnym rozszyfrowaniu, o który dzień chodzi! W tym zapisie poszczególne człony oddzielamy od siebie kropką, ale nie stawiamy jej na końcu (chyba że to kropka zamykająca zdanie). W przypadku dni złożonych z jednej cyfry nie musimy stawiać z przodu zera, ale w miesiącach jest to obowiązkowe, np. 1.02.2011, a nie 01.2.2011 lub 1.2.2011.
+
+Zapis dat przy użyciu cyfr rzymskich
+
+W tym przypadku dzień i rok zapisujemy cyframi arabskimi, a miesiąc – rzymskimi, np. 20 III 2004, 3 V 1991. W takim zapisie poszczególne elementy oddzielamy spacjami i nie używamy kropek: zapis 1.II.2011 jest błędny.
+Zapis cyfrowo-słowny
+
+Daty możemy również zapisać przy użyciu zarówno cyfr arabskich (dotyczy dnia i roku), jak i słów (dotyczy miesiąca), np. 20 marca 2004, 3 maja 1991. Należy pamiętać o odmianie nazwy miesiąca, która zawsze powinna występować w dopełniaczu, a więc 3 (dzień którego miesiąca?) stycznia, 15 (dzień którego miesiąca?) listopada itd. Pozostawienie miesiąca w mianowniku (np. 26 październik 2011) jest błędem i sugeruje, że we wskazanym roku występuje więcej niż jeden dany miesiąc (w naszym przykładzie aż 26!). Błędem jest również stawianie kropki po liczebniku porządkowym oznaczającym dzień. W przypadku daty nie ma wątpliwości, że chodzi właśnie o liczebnik porządkowy, dlatego kropka jest zbędna – nie powiemy przecież trzy maja, ale naturalnie odczytamy ten zapis jako trzeci maja.
+
+Datę można oczywiście zapisać całkowicie słownie, ale taki zapis jest długi i niefunkcjonalny, dlatego rzadko spotykamy go na co dzień. Na końcu daty często dopisuje się skrót r., który powinien być oddzielony od niej spacją, a po nim musi znajdować się kropka, np. 29.08.1980 r., 13 VII 2006 r. Można również użyć pełnej formy wyrazu: roku.
+
+Źródło:
+https://polszczyzna.pl/jak-poprawnie-zapisywac-daty/

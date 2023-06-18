@@ -1,0 +1,282 @@
+[Wymaganie nr 22]
+Feature: System musi monitorować wszystkie zdarzenia związane z jego eksploatacją
+
+        Given:  Istniejący i działąjący system.
+        When:   Wprowadzanie danych.
+                And: Wprowadzone dane są poprawne
+        Then:   Dane/zdarzenia są umieszczone i przechowywują się w systemie.
+
+        Given:  Istniejący i działąjący system.
+        When:   Wprowadzanie danych.
+                And: Wprowadzone dane nie są poprawne
+        Then:   Dane/zdarzenia nie są umieszczone i nie będą przechowywane w systemie.
+
+        Given:  Istniejący i działąjący system.
+        When:   Modyfikacja danych.
+                And: Zmodyfikowane dane są poprawne
+        Then:   Dane/zdarzenia są umieszczone i przechowywują się w systemie.
+
+        Given:  Istniejący i działąjący system.
+        When:   Modyfikacja danych.
+                And: Zmodyfikowane dane nie są poprawne
+        Then:   Dane/zdarzenia nie są umieszczone i nie będą przechowywane w systemie.
+
+
+[Wymaganie nr 23]
+Feature: System musi zapewniać zgodność gromadzonych danych z obowiązującymi aktami prawnymi: 
+
+        Given:  Podane jest imie
+                And: Podane jest nazwisko
+                And: Podany jest numer telefonu
+                And: Wszystkie podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika zostają zapisane do systemu
+
+        Given:  Nie podane jest imie
+                And: Podane jest nazwisko
+                And: Podany jest numer telefonu
+                And: Wszystkie pozostałe podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie
+                And: Nie podane jest nazwisko
+                And: Podany jest numer telefonu
+                And: Wszystkie pozostałe podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie
+                And: Podane jest nazwisko
+                And: Nie podany jest numer telefonu
+                And: Wszystkie pozostałe podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Nie podane jest imie
+                And: Nie podane jest nazwisko
+                And: Podany jest numer telefonu
+                And: Wszystkie pozostałe podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Nie podane jest imie
+                And: Podane jest nazwisko
+                And: Nie podany jest numer telefonu
+                And: Wszystkie pozostałe podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie
+                And: Nie podane jest nazwisko
+                And: Nie podany jest numer telefonu
+                And: Wszystkie pozostałe podane dane są zgodne z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Nie podane jest imie
+                And: Nie podane jest nazwisko
+                And: Nie podany jest numer telefonu
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie nie zgodne z regułami
+                And: Podane jest nazwisko
+                And: Podany jest numer telefonu
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie
+                And: Podane jest nazwisko nie zgodne z regułami
+                And: Podany jest numer telefonu
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie 
+                And: Podane jest nazwisko
+                And: Podany jest numer telefonu nie zgodny z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie nie zgodne z regułami
+                And: Podane jest nazwisko nie zgodne z regułami
+                And: Podany jest numer telefonu
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie nie zgodne z regułami
+                And: Podane jest nazwisko
+                And: Podany jest numer telefonu nie zgodny z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Podane jest imie
+                And: Podane jest nazwisko nie zgodne z regułami
+                And: Podany jest numer telefonu nie zgodny z regułami
+        When:   Próbujemy zapisać dane do systemu
+        Then:   Dane użytkownika nie zostają zapisane do systemu
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest nazwisko
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowany jest numer telefonu
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowany jest numer telefonu
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Modyfikowane dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest nazwisko
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowany jest numer telefonu
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowany jest numer telefonu
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Modyfikowane dane nie są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Wprowadzone imie nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone imie nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone nazwisko nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Wprowadzone nazwisko nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzony numer telefonu nie jest zgodny z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzony numer telefonu nie jest zgodny z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone imie nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone imie nie jest zgodne z regułami
+                And: Wprowadzone nazwisko nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone imie nie jest zgodne z regułami
+                And: Wprowadzony numer telefonu nie jest zgodny z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone nazwisko nie jest zgodne z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie
+
+        Given:  Modyfikowane jest imie
+                And: Modyfikowane jest nazwisko
+                And: Modyfikowany jest numer telefonu
+                And: Wprowadzone nazwisko nie jest zgodne z regułami
+                And: Wprowadzony numer telefonu nie jest zgodny z regułami
+                And: Wszystkie pozostałe dane są zgodne z regułami
+        When:   Próbujemy zmodyfikować dane w systemie
+        Then:   Dane użytkownika nie zostały zmodyfikowane w systemie

@@ -1,0 +1,4 @@
+Nazwa instrukcji: zadanie-6_zestaw-2
+Slowo przed modyfikacja: [_, 1, 1, 1, 1, 1, _]
+Slowo po modyfikacji:    [_, 1, 1, 1, 1, _, _]
+Stan koncowy: k

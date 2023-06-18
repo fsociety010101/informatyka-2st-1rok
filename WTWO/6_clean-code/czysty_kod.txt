@@ -1,0 +1,31 @@
+--- Main.java ---
+1). Pierwszym problemem jest to ze ja z jakiegos powodu uzylem dwoch jezykow (polski i angielski) do napisania kodu/funkcji, powoduje to nieczytelnosc i niespojnosc kodu. Dla przykladu mam obiekt klasy stringDirector ktory wywoluje wlasna metode wygenerujNapis, moim zdaniem najlepszym rozwiazaniem byloby napisanie wszystich nazw zmiennych/funkcji w jezyku angielskim, np. stringDirector.generateString().
+
+2). Drugi problem to nazwa zmiennej int array[] i to nie jest "meaningful name". W tym przypadku lepszym rozwiazaniem jest zmiana nazwy na np. int numbers[].
+
+3). Moim zdaniem w tym projekcie moj kod jest dobrze sformatowany: zawiera odstepy miedzy segmentami, funkcje wywolywane sa pod funkcjami wywolujacymi, wiersze maks. 120 znakowe i zawiera spacje wokol operatorow.
+
+4). Komentarze w tym pliku sa krotkie i "rozdielaja" kod na sekcje aby latwiej bylo go czytac, poniewaz kod jest podobny. Jest to nie najlepsze rozwiazanie, poniewaz komentarze nie "wyjasniaja" mojego kodu. Powtarzajace sekcje kodu mozna byloby zastapic uzyciem jednej wspolnej metody. 
+
+--- Builder/StringDirector.java ---
+1). U gory tej klasy najogolniejsze metody, ponizej bardziej szczegolowe. 
+
+2). Zostawilem jeden komentarz TODO, moim zdaniem jest to dobry komentarz poniwaz wskazuje co potrzebuje uwagi, np. dla innych deweloperow.
+
+3). Te same problemy z uzyciem dwoch jezykow i nie znaczacych nazw. W tym przypadku np. konstruktor przyjmuje obiekt StringBuilder o nazwie stringBuilder, takze zawiera w sobie prywatny atrybut typu StringBuilder o nazwie stringBuilder. Moim zdaniem najlepszym rozwiazaniem jest zmiana nazwy np. na stringBuilderProvider
+
+4). Kod jest dobrze sformatowany i rozdielony pustymi liniami ktore wskazuja na nowe koncepcje.
+
+--- Builder/StringBuilder.java ---
+1). Te same problemy z uzyciem dwoch jezykow i nie znaczacych nazw.
+
+2). Kod jest dobrze sformatowany i rozdielony pustymi liniami ktore wskazuja na nowe koncepcje.
+
+--- Formats/MP3.java & OGG.java & WAV.java ---
+1). Te 3 klasy zawieraja podobny kod poniewaz implementuja interfejs StringBuilder i jego metody za pomoca adnotacji @Override, moim zdaniem jest tu wszystko dobrze zrobione.
+
+2). Kod jest dobrze sformatowany i bloki kodu ktore nie sa powiazane miedzy soba rozdielone pustymi liniami.
+
+3). Importy tez rozdielony pustymi liniami, blisko znajduja te importy ktore maja bliskie zwiazki.
+
+4). Uzycie konstrukcji typu "+=". Np. res += "Header: Mp3Header\n"; zamiast res = res + "Header: Mp3Header\n".

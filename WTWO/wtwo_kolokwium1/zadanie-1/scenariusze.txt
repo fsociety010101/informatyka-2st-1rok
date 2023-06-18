@@ -1,0 +1,76 @@
+[Wymaganie A]
+Feature: Osoby o nazwisku Rockatansky nie powinny otrzymywac zadnego paliwa.
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+        When: Osoba prosi o paliwo
+            And: Nazwisko tej osoby Rockatansky
+        Then: Osoba nie otrzymuje zadnego paliwa
+
+[Wymaganie B]
+Feature: Osoby o punktacji nizszej niz 10 moga otrzymac jednorazowo tylko 10l paliwa.
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest wystarczajaca ilosc
+        When: Osoba prosi o paliwo
+            And: Punktacja tej osoby jest nizsza niz 10
+        Then: Osoba otrzymuje 10l paliwa jednorazowo
+
+[Wymaganie C]
+Feature: Osoby o punktacji wyzszej niz 30 otrzymuja zadana ilosc paliwa
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest wystarczajaca ilosc
+        When: Osoba prosi o paliwo
+            And: Punktacja tej osoby jest wyzsza niz 30
+        Then: Osoba otrzymuje zadana ilosc paliwa
+
+[Wymaganie D]
+Feature: Osoby o punktacji miedzy 10 a 30 otrzymuja maksymalnie 10l paliwa o polowe zadanej nadwyzki ponad
+         wspomniane 10l paliwa,
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest wystarczajaca ilosc
+        When: Osoba prosi o paliwo
+            And: Punktacja tej osoby jest wyzsza niz 10
+            And: Punktacja tej osoby jest nizsza niz 30
+        Then: Osoba otrzymuje maksymalnie 10l paliwa
+            And: Polowe zadanej nadwyzki ponad wspomniane 10l paliwa
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest wystarczajaca ilosc
+        When: Osoba prosi o paliwo
+            And: Punktacja tej osoby jest 13
+        Then: Osoba otrzymuje maksymalnie 10l paliwa
+            And: Polowe zadanej nadwyzki ponad wspomniane 10l paliwa
+
+[Wymaganie E]
+Feature: Osoby funkcyjne otrzymuja zadana ilosc paliwa
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest wystarczajaca ilosc
+        When: Osoba prosi o paliwo
+            And: Osoba jest osoba fynkcyjna
+        Then: Osoba otrzymuje zadana ilosc paliwa
+
+[Wymaganie F]
+Feature: W przypadku gdy paliwa w Kopule Gromu jest mniej niz 100l, paliwo otrzymuja tylko osoby funkcyjne
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest mniej niz 100l
+        When: Osoba prosi o paliwo
+            And: Osoba jest osoba fynkcyjna
+        Then: Osoba otrzymuje zadana ilosc paliwa
+
+        Given: Kopula Gromu
+            And: Paliwo w Kopule Gromu
+            And: Paliwa w Kopule Gromu jest mniej niz 100l
+        When: Osoba prosi o paliwo
+            And: Osoba nie jest osoba fynkcyjna
+        Then: Osoba nie otrzymuje zadnego paliwa

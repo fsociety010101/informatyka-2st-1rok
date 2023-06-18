@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ flatpage.title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+<ul>
+    <li><a href="{% url 'admin:index' %}">Admin</a></li>
+    {% for page in flatpages %}
+        <li><a href="/pages{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
+<h3>Domain: {{ request.get_host }}</h3>
+</body>
+</html>

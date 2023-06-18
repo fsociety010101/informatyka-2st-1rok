@@ -1,0 +1,32 @@
+Opis: zadanie-4_zestaw-2
+stany: 0,1,k
+alfabet: 0,1,2,3,4,5,6,7,8,9,_
+długość słowa: 3
+słowo: 209
+stan końcowy: k
+stan początkowy: 0
+instrukcja:
+0:
+    0;0,0,r;
+    1;0,1,r;
+    2;0,2,r;
+    3;0,3,r;
+    4;0,4,r;
+    5;0,5,r;
+    6;0,6,r;
+    7;0,7,r;
+    8;0,8,r;
+    9;0,9,r;
+    _;1,_,l;
+1:
+    0;k,1,s;
+    1;k,2,s;
+    2;k,1,s;
+    3;k,0,s;
+    4;k,1,s;
+    5;k,0,s;
+    6;k,1,s;
+    7;k,0,s;
+    8;k,1,s;
+    9;1,0,l;
+    _;k,1,s;

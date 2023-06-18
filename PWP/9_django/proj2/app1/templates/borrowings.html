@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borrowings</title>
+</head>
+<body>
+<h1>Borrowings</h1>
+<ul>
+    {% for it in borrowings %}
+    <li>
+        <h3> ID-{{ it.borrow_id }}:</h3>
+        <div> Reader: {{ it.reader.reader_name }}</div>
+        <div> Book title: {{ it.reader.book.title }}</div>
+        <div> Start Date: {{ it.start_date }}</div>
+        <div> End Date: {{ it.end_date }}</div>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
